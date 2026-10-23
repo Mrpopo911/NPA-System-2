@@ -1,0 +1,16 @@
+# Python
+venv/
+source/
+__pycache__/
+*.pyc
+mlservice/catboost_info/
+
+# Node
+node_modules/
+dist/
+
+# Env, data, misc
+.env
+*.csv
+*.zip
+.DS_Store

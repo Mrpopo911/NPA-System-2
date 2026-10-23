@@ -1,0 +1,10 @@
+fastapi>=0.110
+uvicorn>=0.29
+pandas>=2.0
+numpy>=1.24
+joblib>=1.3
+scikit-learn>=1.3
+# model.pkl was saved with xgboost 2.1.4; newer versions load it too
+# (they print a harmless warning). If loading ever fails, run `python train.py`.
+xgboost>=2.1
+# Optional, only for compare_models.py:  lightgbm  catboost
