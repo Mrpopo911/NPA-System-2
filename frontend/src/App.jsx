@@ -105,9 +105,11 @@ export default function App() {
     
     {/* HEADER */}
    <div style={{ ...styles.header, ...styles.fadeInSlow }}>
-      <img src="/NCDCNewlogo.png" style={styles.logo} />
-      <h2 style={styles.title}>NPA Recovery Dashboard</h2>
-    </div>
+  <h2 style={styles.title}>NPA Recovery Dashboard</h2>
+  <p style={styles.subtitle}>
+    Upload a loan document to estimate recovery risk
+  </p>
+</div>
 
     {/* MAIN CONTENT */}
     <div style={styles.container}>
@@ -257,11 +259,28 @@ const styles = {
 
   header: {
   display: "flex",
+  flexDirection: "column",
   alignItems: "center",
-  gap: "12px",
-  padding: "12px 20px",
+  justifyContent: "center",
+  textAlign: "center",
+  padding: "36px 20px 28px",
   borderBottom: "1px solid rgba(59,130,246,0.2)",
   boxShadow: "0 2px 20px rgba(59,130,246,0.1)",
+},
+title: {
+  fontSize: "44px",
+  fontWeight: 800,
+  margin: 0,
+  letterSpacing: "0.5px",
+  background: "linear-gradient(90deg, #60a5fa, #a78bfa)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+},
+
+subtitle: {
+  margin: "10px 0 0",
+  fontSize: "15px",
+  opacity: 0.65,
 },
 
   kpiContainer: {
